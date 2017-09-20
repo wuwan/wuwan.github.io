@@ -1,0 +1,407 @@
+﻿<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+<!-- Basic Page Needs
+================================================== -->
+<title>主页</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<!-- Mobile Specific Metas 
+================================================== -->
+<meta content="width=device-width,initial-scale=1" name="viewport">
+
+<!-- Favicons
+================================================== -->
+<link rel="shortcut icon" href="images/favicon.png">
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+
+<!--fonts
+====================================================-->
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700%7cOswald:400,700" rel="stylesheet">
+<!--stylesheets
+====================================================-->
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">  
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/simpletextrotator.css"> 
+
+<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]--> 
+<script src="js/jquery.min.js"></script> <!-- JQUERY -->
+</head>
+<body>
+
+<!--FRONT PAGE/ SPLASH SCREEN SECTION-->
+
+<div class="loading-screen"></div>
+
+<div id="frontpage"> 
+	<div class="shadow-img"></div> 
+
+	<h1>杨 <span class="invert">茵</span></h1><!--PROFILE NAME-->
+	<h3 class="invert" style="margin-top: -10px; margin-bottom: 10px;">软件 <span class="rotate">Developer, Designer, Artist</span></h3> <!--SUBTITLE IN PROFILE-->
+</div>
+<!--FRONT PAGE/ SPLASH SCREEN SECTION ENDS-->
+<!--container-->
+<div class="container">
+	<div id="content" class="row hidden">
+		<div class="col-sm-4">
+			<!--namecard-->
+			<div id="namecard" class="namecard">
+				<div class="shadow-img"></div>
+				<h1 class="maintitle">杨 <span class="invert">茵</span></h1><!--PROFILE NAME-->
+				<h3 class="invert sub-maintitle">软件 
+					<span class="rotate">Developer, Designer, Artist</span><!--SUBTITLE AFTET NAME-->
+				</h3>
+				<img id="profile-img" class="profile-img transparent" src="images/profile-thum.png" alt="profile-image"><!--PROFILE IMAGE-->
+			</div><!--/#namecard-->
+			<!--menu-->
+			<div id="menu-container">
+				<!--PAGE MENU-->
+				<ul class="nav-menu no-padding">
+					<li class="nav-btn selected" title="Home" data-page="home">
+						<div class="hover-background"></div>
+						<span>主页</span><i class="fa fa-user fa-fw"></i>
+					</li>
+					<li class="nav-btn" id="resume-btn" title="Resume"  data-page="resume">
+						<div class="hover-background"></div>
+						<span>简历</span><i class="fa fa-file-text fa-fw"></i>
+					</li>
+				   <li class="nav-btn folio-btn" data-filter="*" title="Portfolio" data-page="portfolio">
+						<div class="hover-background"></div>
+						<span>履历</span><i class="fa fa-suitcase fa-fw"></i>
+					</li>
+					<li class="nav-btn" title="Contact" id="contact-link" data-page="contact">
+						<div class="hover-background"></div>
+						<span>自我评价</span><i class="fa fa-paper-plane fa-fw"></i>
+					</li>
+				</ul><!--/.nav-menu __PAGE MENU ENDS-->
+
+				<!--SOCIAL NAV MENU-->
+				
+			</div><!--#menu-container-->
+		</div>
+		<div class="col-sm-8 page-segment">
+			<ul class="page-container no-padding">
+				<!--HOME/PROFILE PAGE-->
+				<li id="home" class="selected">
+					<div class="title-container hidden">
+						<div class="shadow-img"></div> 
+						<h2 class="rotate-out">欢迎 到 <span class="invert">我的 小屋</span></h2><!--HOME TITLE-->                          
+					</div>
+					<div class="description hidden">
+						<div class="watermark-home"></div> 
+
+						<div class="fade-text transparent">
+							<!--DESCRIPTION ON HOME-->
+							<div class="strong-text">大家好, 我 是 <span>杨 茵</span></div>
+							<div class="focus-text"><span>信息 学院 ~ </span><span>软件工程 毕业生</span></div>
+							<p class="large-paragraph">本人就读于石家庄铁道大学，2018届应届毕业生。我认为自己在学校的这段时间，充分地学习到了专业知识，并且对于未来的工作，我充满热情。</p>         
+							<!--DESCRIPTION ON HOME ENDS-->
+						</div>
+
+						<!--ALL PERSONAL DETAILS-->
+						<h3 class="personal-info-title title">个人 信息</h3>
+						<ul class="personal-info">
+							<li class="rotate-out rotated"><label>姓名</label><span>杨 茵</span></li>                     
+							<li class="rotate-out rotated"><label>地址</label><span>河北省 石家庄市</span></li>
+							<li class="rotate-out rotated"><label>邮箱</label><span>294362243@qq.com</span></li>  
+							<li class="rotate-out rotated"><label>手机</label><span>15227106562</span></li>
+							<li class="rotate-out rotated"><label>求职</label><span>Java开发    软件测试</span></li>
+						</ul><!--/ul.personal-info-->
+					</div>
+				</li><!--/#home-->
+
+				<!--RESUME PAGE-->
+				<li id="resume" class="hidden">
+					<div class="title-container">
+						<div class="shadow-img"></div>
+						<h2 class="rotate-out rotated"><span class="invert">杨茵 的</span> 简 历</h2> <!--RESUME TITLE-->
+					</div>
+					<div class="description">
+
+						<div class='tabs tabs_animate'>
+							<!--RESUME TAB LISTS-->
+							<ul class='horizontal no-padding'>
+								<li><a href="#tab-1" class="icon-bg icon-skills"><div>专业技能</div></a></li>
+								<li><a href="#tab-2" class="icon-bg icon-education"><div>教育</div></a></li>
+								<li><a href="#tab-3" class="icon-bg icon-employment"><div>实践经验</div></a></li>
+							</ul><!--RESUME TAB LISTS ENDS-->
+
+							<!--RESUME FIRST TAB/SKILL TAB DETAILS-->
+							<div id='tab-1'>
+								<h4 class="title">前端</h4><!--SKILLS WITH BAR DISPLAY-->
+								<ul class="skills-list no-padding">
+									<li class="row">
+										<div class="col-xs-2"><div class="fw-mid">HTML</div></div>
+										<div class="col-xs-9">
+											<div class="bar">
+												<div class="fw-mid">熟练使用</div>
+											</div>
+										</div>
+									</li>
+									<li class="row">
+										<div class="col-xs-2"><div class="fw-mid">CSS</div></div>
+										<div class="col-xs-9">
+											<div class="bar">
+												<div class="fw-mid">比较熟练</div>
+											</div>
+										</div>
+									</li>
+									<li class="row">
+										<div class="col-xs-2"><div class="fw-mid">JavaScript</div></div>
+										<div class="col-xs-9">
+											<div class="bar">
+												<div class="fw-mid">比较熟练</div>
+											</div>
+										</div>
+									</li>
+								</ul><!--SKILLS WITH BAR DISPLAY ENDS-->
+                                <h4 class="title">后端</h4>
+                                <ul class="skills-list no-padding">
+                                <li class="row">
+										<div class="col-xs-2"><div class="fw-mid">JSP</div></div>
+										<div class="col-xs-9">
+											<div class="bar">
+												<div class="fw-mid">熟练使用</div>
+											</div>
+										</div>
+									</li>
+									<li class="row">
+										<div class="col-xs-2"><div class="fw-mid">JAVA</div></div>
+										<div class="col-xs-9">
+											<div class="bar">
+												<div class="fw-mid">熟练使用</div>
+											</div>
+										</div>
+									</li>
+									<li class="row">
+										<div class="col-xs-2"><div class="fw-mid">C++</div></div>
+										<div class="col-xs-9">
+											<div class="bar">
+												<div class="fw-mid">比较熟练</div>
+											</div>
+										</div>
+									</li>
+                               </ul>
+                               <h4 class="title">其他</h4>
+                                <ul class="skills-list no-padding">
+                                <li class="row">
+										<div class="col-xs-2"><div class="fw-mid">Photoshop</div></div>
+										<div class="col-xs-9">
+											<div class="bar">
+												<div class="fw-mid">一般熟练</div>
+											</div>
+										</div>
+									</li>
+									<li class="row">
+										<div class="col-xs-2"><div class="fw-mid">Vegas Pro</div></div>
+										<div class="col-xs-9">
+											<div class="bar">
+												<div class="fw-mid">一般熟练</div>
+											</div>
+										</div>
+									</li>
+                               </ul>
+								
+							</div><!--RESUME FIRST TAB/SKILL TAB DETAILS ENDS-->
+							
+							<!--RESUME SECOND TAB/EDUCATION TAB DETAILS-->
+							<div id='tab-2'>
+								<h3 class="title">教育</h3>
+								<ul class="education-class">
+									
+									<li>
+										<!--EDUCATION LIST ITEM-->
+										<h4 class="title">计算机科学学士学位</h4>
+										<div>
+											<h5 class="title">石家庄铁道大学<span class="list-year">(2014 - 2018)</span></h5>
+											<h4>主修课程：    C语言及面向对象编程、软件工程概论、算法与数据结构、数据库原理、软件测试技术、软件体系结构、软件需求与分析、操作系统、统一建模语言等。</h4>
+											<h4>辅修课程：    WEB应用开发技术、JAVA语言、Oracle数据库、移动应用开发技术、JAVA EE架构程序设计等。</h4>
+										</div>
+									</li>
+									
+								</ul>
+							</div><!--RESUME SECOND TAB/EDUCATION TAB DETAILS ENDS-->
+							<!--RESUME THIRD TAB/EMPLYMENT TAB DETAILS ENDS-->
+							<div id='tab-3'>
+								<h3 class="title">实践</h3>
+								<ul class="employment-class tab-cont">
+									<li>
+										<!--EMPLOYMENT INDIVIDUAL LIST-->
+										<h4>鲜花种子进销存系统 <span class="year">大二下学期</span></h4>
+										<h5>使用C# C/S架构</h5>
+				
+									</li>
+									<li>
+										<!--EMPLOYMENT INDIVIDUAL LIST-->
+										<h4>JAVA WEB系统 </h4>
+										<h5>使用JAVA语言做过多个JAVA WEB系统</h5>
+								
+									</li>
+									<li>
+										<!--EMPLOYMENT INDIVIDUAL LIST-->
+										<h4>二次电影网站开发 <span class="year">大三暑假</span></h4>
+										<h5>在天津于家堡培训大数据，使用hadoop二次开发</h5>
+				
+									</li>
+									<li>
+										<!--EMPLOYMENT INDIVIDUAL LIST-->
+										<h4>代码库传送门 </h4>
+										<h5><a href="https://github.com/wuwan">代码库</a></h5>
+								
+									</li>
+								</ul>
+							</div><!--RESUME THIRD TAB/EMPLYMENT TAB DETAILS ENDS-->
+						</div>
+					</div>
+				</li>
+				<!--/#resume-->
+				<!--PORTFOLIO PAGE-->
+				<li id="portfolio" class="hidden">
+					<div class="title-container">
+						<div class="shadow-img"></div>
+						<h2 class="rotate-out rotated">人生 履历</h2> <!--PORTFOLIO TITLE-->                         
+					</div>
+
+					<!--PORTFOLIO CATEGORY LIST-->    
+					<div class="abs-child">
+						<ul class="button-group filters-button-group">
+							<li class="button is-checked" data-filter=".commercial">荣 誉</li>
+							<li class="button" data-filter=".photography">证 明</li>
+						</ul><!--/.button-group filters-button-group-->
+					</div>
+					
+					<div class ="sec-porfolio description"> 
+						<div class="row">
+							<!--PORTFOLIO ITEM CONTAINER-->
+							<div class="folio-container">
+								<ul class="folio-item"><!--PORTFOLIO INDIVIDAUAL ITEM-->
+								    <li class="commercial"><!--PORTFOLIO INDIVIDAUAL ITEM--> 
+										<div style="color:black;font-size:20px">石家庄铁道大学第十五届网页设计大赛专业组三等奖</div>
+									</li>
+									<li class="commercial"><!--PORTFOLIO INDIVIDAUAL ITEM--> 
+										<div style="color:black;font-size:20px">河北省大学生调研河北活动特等奖</div>
+									</li>
+									<li class="commercial"><!--PORTFOLIO INDIVIDAUAL ITEM--> 
+										<div style="color:black;font-size:20px">石家庄铁道大学第四届微视频创作大赛优胜奖</div>
+									</li>
+									<li class="commercial"><!--PORTFOLIO INDIVIDAUAL ITEM--> 
+										<div style="color:black;font-size:20px">2014-2017学年多次获得二等优秀学生奖学金</div>
+									</li>
+									<li class="view view-first photography">  
+										<img src="images/folio/logs.jpg"/><!--PORTFOLIO INDIVIDAUAL ITEM IMAGE--> 
+										<div class="mask">  
+											 <h2>网页设计大赛</h2> <!--PORTFOLIO INDIVIDAUAL ITEM TITLE-->                               
+								
+										 </div>  
+									</li>  
+									
+									<li class="view view-first photography"> <!--PORTFOLIO INDIVIDAUAL ITEM--> 
+										 <img src="images/folio/beach.jpg"/> <!--PORTFOLIO INDIVIDAUAL ITEM IMAGE-->  
+										 <div class="mask">  
+											 <h2>微视频创作</h2><!--PORTFOLIO INDIVIDAUAL ITEM TITLE-->                                    
+										
+										 </div>  
+									</li>                         
+									<li class="view view-first photography"><!--PORTFOLIO INDIVIDAUAL ITEM-->
+									  <img src="images/folio/guy.jpg"/><!--PORTFOLIO INDIVIDAUAL ITEM IMAGE--> 
+										<div class="mask"></div>
+										<div class="content">
+											<h2>英语四级成绩报告单</h2><!--PORTFOLIO INDIVIDAUAL ITEM TITLE-->                                 
+					
+										</div>
+									</li>                 
+									<li class="view view-first photography"><!--PORTFOLIO INDIVIDAUAL ITEM-->
+									  <img src="images/folio/book1.jpg" /><!--PORTFOLIO INDIVIDAUAL ITEM IMAGE--> 
+										<div class="mask"></div>
+										<div class="content">
+											<h2>2016-2017学年二等奖</h2><!--PORTFOLIO INDIVIDAUAL ITEM TITLE-->                                 
+					
+										</div>
+									</li> 
+									<li class="view view-first photography"><!--PORTFOLIO INDIVIDAUAL ITEM-->
+									  <img src="images/folio/book2.jpg"/><!--PORTFOLIO INDIVIDAUAL ITEM IMAGE--> 
+										<div class="mask"></div>
+										<div class="content">
+											<h2>2015-2016学年二等奖</h2><!--PORTFOLIO INDIVIDAUAL ITEM TITLE-->                                 
+					
+										</div>
+									</li>
+									<li class="view view-first photography"><!--PORTFOLIO INDIVIDAUAL ITEM-->
+									  <img src="images/folio/book3.jpg"/><!--PORTFOLIO INDIVIDAUAL ITEM IMAGE--> 
+										<div class="mask"></div>
+										<div class="content">
+											<h2>2014-2015学年二等奖</h2><!--PORTFOLIO INDIVIDAUAL ITEM TITLE-->                                 
+					
+										</div>
+									</li>	
+									<li class="view view-first photography"><!--PORTFOLIO INDIVIDAUAL ITEM-->
+									  <img src="images/folio/illustration.jpg"/><!--PORTFOLIO INDIVIDAUAL ITEM IMAGE--> 
+										<div class="mask"></div>
+										<div class="content">
+											<h2>普通话二级甲等</h2><!--PORTFOLIO INDIVIDAUAL ITEM TITLE-->                                 
+					
+										</div>
+									</li>											
+											  
+								</ul>
+							</div>
+							<!--PORTFOLIO ITEM CONTAINER ENDS-->
+						</div>                          
+					</div>
+				</li><!--/#portfolio-->
+
+				<!--CONTACT PAGE-->
+				<li id="contact" class="hidden">
+				    <div class="description">                           
+						<div class="row">
+							<div class="col-sm-12">
+								<div class="map-container" style="padding-left:30px;padding-top:50px">
+									我认为自己在大学四年期间接受了充分地专业知识学习和教育。本人勤恳踏实，并且对于未来的工作充满热情，并且
+									认为可以胜任。希望可以得到一份自己比较满意的工作。
+								</div>
+							</div>				
+						</div>
+					</div>
+				</li>
+				<li class="hidden">
+					<div class="description">                           
+						<div class="row">
+							<div class="col-sm-12">
+								<div class="map-container">
+									<div id="map" style="width:100%;height:325px;"></div><!--GOOGLE MAP-->
+								</div>
+							</div>				
+						</div>
+					</div>
+				</li><!--/#contact-->
+			</ul>         
+		</div><!--/.page-segment -->
+		<h6 class="copyright-text">Copyright © 2017 杨茵</h6><!--if anyone wants copyright Texts--> 
+	</div>
+</div><!--/.container -->
+
+
+
+<!--javascript files
+=============================================================-->
+<script type="text/javascript" src="js/jQueryTween-aio-min.js"></script> <!-- JQUERY Tween Plugin -->
+<script type="text/javascript" src="js/jquery.tabslet.min.js"></script> <!-- JQUERY Tab plugin-->     
+<script type="text/javascript" src="js/progressbar.min.js"></script> <!-- JQUERY Progressbar Plugin-->
+<script type="text/javascript" src="js/jquery.simple-text-rotator.min.js"></script> <!-- JQUERY Text Rotator-->
+<script type="text/javascript" src="js/bootstrap.min.js"></script> <!-- Bootstrap file-->
+<script src="http://ditu.google.cn/maps/api/js?key=AIzaSyBPNkCVoBW_Jzl6x-hgGU6e7QW1QMwKles"></script>
+<script type="text/javascript" src='js/isotope.pkgd.min.js'></script>
+<script type="text/javascript" src="js/custom.js"></script>
+</body>
+</html>
